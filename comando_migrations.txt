@@ -1,0 +1,32 @@
+objetivo: aprender migração e seeders
+
+npm install pg
+npm install sqlite3
+npm install mysql2 Ok
+
+1- cria-se o arquivo de configuração knexfile.js com o comando 'knex init'
+
+    apos configurado
+
+2- cria-se o arquivo de migração com o comando "knex migrate:make 'nome_da_migação'"
+
+    apos configurado
+
+3- faz a migração do arquivo mais recente com 'knex migrate:latest'
+
+    ou para desfazer a migração
+
+4- faz o downgrad com 'knex migrate:down'
+
+
+criando seed
+
+1- criando knex seed:make 'nome_da_seed'
+
+2- rodando a seed com knex seed:run
+
+//importante, use .env para manter chaves seguras
+
+npm install dotenv --save
+
+require('dotenv').config()
